@@ -25,6 +25,8 @@ public class OrcConvert {
     	File distPaht = new File(distPath);
     	if(distPaht.exists()){
     		distPaht.deleteOnExit();
+    	}else{
+    		distPaht.mkdirs();
     	}
     	System.out.println(distPaht.getAbsolutePath());
     	distPaht.mkdir();
