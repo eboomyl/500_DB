@@ -45,7 +45,8 @@
     <struct name="image" id="" class="物品图片" class_no="1" class_sn="3" desc="物品图片表">
         <entry name="id" type="string" size="60" desc="图片id"/>
         <entry name="souvenirid" type="string" size="60" desc="物品id"/>
-        <entry name="imagecode" type="string" size="200" desc="图片路径"/>
+        <entry name="imageSmallURL" type="string" size="200" desc="缩略图路径"/>
+        <entry name="imageOrigURL" type="string" size="200" desc="原始图片路径"/>
         <entry name="imagesort" type="string" size="200" desc="图片录入顺序"/>
         <entry name="timerecord" type="datetime" size="60" desc="记录时间, 格式 YYYY-MM-DD HH:MM:SS"/>
     </struct>
