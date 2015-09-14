@@ -12,6 +12,8 @@
         <entry name="usercard" type="string" size="60" desc="证件号"/>
         <entry name="userstatus" type="string" size="60" desc="用户状态"/>
         <entry name="istrue" type="string" size="1" desc="是否认证过"/>
+        <entry name="useremail" type="string" size="60" desc="邮箱"/>
+        <entry name="weixin" type="string" size="60" desc="微信"/>
         <entry name="timerecord" type="datetime" size="60" desc="记录时间, 格式 YYYY-MM-DD HH:MM:SS"/>
     </struct>
 
@@ -45,9 +47,8 @@
     <struct name="image" id="" class="物品图片" class_no="1" class_sn="3" desc="物品图片表">
         <entry name="id" type="string" size="60" desc="图片id"/>
         <entry name="souvenirid" type="string" size="60" desc="物品id"/>
-        <entry name="imagecode" type="string" size="200" desc="图片路径"/>
-        <entry name="imageSmallURL" type="string" size="200" desc="缩略图路径"/>
-        <entry name="imageOrigURL" type="string" size="200" desc="原始图片路径"/>
+        <entry name="imagescode" type="string" size="200" desc="图片路径"/>
+        <entry name="userid" type="string" size="200" desc="用户id"/>
         <entry name="imagesort" type="string" size="200" desc="图片录入顺序"/>
         <entry name="timerecord" type="datetime" size="60" desc="记录时间, 格式 YYYY-MM-DD HH:MM:SS"/>
     </struct>
@@ -74,16 +75,25 @@
     <struct name="clearqiniu" id="" class="清理七牛" class_no="1" class_sn="3" desc="清理七牛">
         <entry name="id" type="string" size="60" desc="id"/>
         <entry name="imageid" type="string" size="60" desc="图片id"/>
+        <entry name="souvenirid" type="string" size="60" desc="藏品id"/>
+        <entry name="userid" type="string" size="60" desc="用户id"/>
         <entry name="timerecord" type="datetime" size="60" desc="记录时间, 格式 YYYY-MM-DD HH:MM:SS"/>
+    </struct>
+
+      <!-- 物品时间表，查看谁拥有过，最后一个拥有者是谁 -->
+    <struct name="timeriver" id="" class="系统记录" class_no="1" class_sn="3" desc="物品图片表">
+        <entry name="id" type="string" size="60" desc="评论id"/>
+        <entry name="souvenirid" type="string" size="60" desc="物品id"/>
+        <entry name="userid" type="string" size="60" desc="物品评论标题"/>
+        <entry name="timerecord" type="datetime" size="60" desc="记录时间, 格式 YYYY-MM-DD HH:MM:SS"/>
+        <entry name="sort" type="string" size="2" desc="排序用"/> 
     </struct>
     
     
     
     
+  <!--以上为正在使用的表，以下为还未使用的表-->
   
-  
-  
-    
       <!-- 物品发布表 指定用户或者组织机构让其可以看见该物品的权限  -->
     <struct name="publish" id="" class="发布表" class_no="1" class_sn="3" desc="发布表">
         <entry name="id" type="string" size="60" desc="物品id"/>
@@ -92,18 +102,6 @@
         <entry name="orgid" type="string" size="60" desc="指定某些用户查看权限，该用户有发私信的权限"/>
         <entry name="isall" type="string" size="1" desc="是否广场发布"/>
         <entry name="timerecord" type="datetime" size="60" desc="记录时间, 格式 YYYY-MM-DD HH:MM:SS"/>     
-    </struct>
-    
-    
-  
-    
-     <!-- 物品时间表，查看谁拥有过，最后一个拥有者是谁 -->
-    <struct name="timeriver" id="" class="系统记录" class_no="1" class_sn="3" desc="物品图片表">
-        <entry name="id" type="string" size="60" desc="评论id"/>
-        <entry name="souvenirid" type="string" size="60" desc="物品id"/>
-        <entry name="userid" type="string" size="60" desc="物品评论标题"/>
-        <entry name="timerecord" type="datetime" size="60" desc="记录时间, 格式 YYYY-MM-DD HH:MM:SS"/>
-  		<entry name="sort" type="string" size="2" desc="排序用"/> 
     </struct>
     
      <!-- 物品标签表 -->
