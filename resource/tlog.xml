@@ -108,12 +108,18 @@
         <entry name="sort" type="string" size="2" desc="排序用"/>
     </struct>
 
+    <struct name="jiaoyiyixiang" id="" class="交易意向表" class_no="1" class_sn="3" desc="物品图片表">
+        <entry name="id" type="string" size="60" desc="标签id"/>
+        <entry name="souvenirid" type="string" size="60" desc="标签名"/>
+        <entry name="userid" type="string" size="60" desc="用户id--可以为空"/>
+        <entry name="username" type="string" size="60" desc="用户id"/>
+        <entry name="userphone" type="string" size="60" desc="用户电话"/>
+        <entry name="pirce" type="string" size="60" desc="意向价格"/>
+        <entry name="message" type="string" size="2" desc="留言"/>
+        <entry name="isagree" type="string" size="2" desc="是否同意"/>
+    </struct>
 
 
-    
-    
-    
-    
   <!--以上为正在使用的表，以下为还未使用的表-->
   
       <!-- 物品发布表 指定用户或者组织机构让其可以看见该物品的权限  -->
