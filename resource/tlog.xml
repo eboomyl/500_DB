@@ -88,6 +88,28 @@
         <entry name="timerecord" type="datetime" size="60" desc="记录时间, 格式 YYYY-MM-DD HH:MM:SS"/>
         <entry name="sort" type="string" size="2" desc="排序用"/> 
     </struct>
+
+    <!--晒宝广场模块-->
+    <struct name="shaibao" id="" class="晒宝表" class_no="1" class_sn="3" desc="晒宝列表">
+        <entry name="id" type="string" size="60" desc="评论id"/>
+        <entry name="souvenirid" type="string" size="60" desc="物品id"/>
+        <entry name="userid" type="string" size="60" desc="用户id"/>
+        <entry name="labelid" type="datetime" size="60" desc="标签"/>
+        <entry name="allsort" type="string" size="60" desc="全部中的顺序"/>
+        <entry name="lablesort" type="string" size="60" desc="标签中的顺序"/>
+        <entry name="endTime" type="string" size="60" desc="结束时间  格式 YYYY-MM-DD HH:MM:SS"/>
+    </struct>
+
+    <struct name="shaibaolabel" id="" class="晒宝广场标签表" class_no="1" class_sn="3" desc="物品图片表">
+        <entry name="id" type="string" size="60" desc="标签id"/>
+        <entry name="labelname" type="string" size="60" desc="标签名"/>
+        <entry name="labelen" type="string" size="60" desc="标签英文简写"/>
+        <entry name="timerecord" type="datetime" size="60" desc="记录时间, 格式 YYYY-MM-DD HH:MM:SS"/>
+        <entry name="sort" type="string" size="2" desc="排序用"/>
+    </struct>
+
+
+
     
     
     
