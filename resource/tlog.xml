@@ -14,6 +14,7 @@
         <entry name="istrue" type="string" size="1" desc="是否认证过"/>
         <entry name="useremail" type="string" size="60" desc="邮箱"/>
         <entry name="weixin" type="string" size="60" desc="微信"/>
+        <entry name="shaibaolabel" type="string" size="512" desc="晒宝广场用户标签表"/>
         <entry name="timerecord" type="datetime" size="60" desc="记录时间, 格式 YYYY-MM-DD HH:MM:SS"/>
     </struct>
 
