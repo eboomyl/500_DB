@@ -71,7 +71,7 @@ public class OrcConvert {
                 if (i < form.getFactors().size() - 1) sb.append(",\n");
 
             }
-            sb.append(",\n PRIMARY KEY (id))\n");
+            sb.append(",\n PRIMARY KEY (id))");
             sb.append(";\n");
             sb.append("\n");
 

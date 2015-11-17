@@ -90,6 +90,12 @@
         <entry name="sort" type="string" size="2" desc="排序用"/> 
     </struct>
 
+    <!--朝代码对应表-->
+    <struct name="dynasty" id="" class="朝代码对应表" class_no="1" class_sn="3" desc="朝代码对应表">
+        <entry name="dynastycode" type="string" size="10" desc="朝代码"/>
+        <entry name="dynastyname" type="string" size="60" desc="朝代名称"/>
+    </struct>
+
     <!--晒宝广场模块-->
     <struct name="shaibao" id="" class="晒宝表" class_no="1" class_sn="3" desc="晒宝列表">
         <entry name="id" type="string" size="60" desc="评论id"/>
