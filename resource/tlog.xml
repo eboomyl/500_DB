@@ -120,7 +120,7 @@
         <entry name="id" type="string" size="60" desc="标签id"/>
         <entry name="souvenirid" type="string" size="60" desc="标签名"/>
         <entry name="userid" type="string" size="60" desc="用户id--可以为空"/>
-        <entry name="username" type="string" size="60" desc="用户id"/>
+        <entry name="username" type="string" size="60" desc="用户名"/>
         <entry name="userphone" type="string" size="60" desc="用户电话"/>
         <entry name="pirce" type="string" size="60" desc="意向价格"/>
         <entry name="message" type="string" size="2" desc="留言"/>
