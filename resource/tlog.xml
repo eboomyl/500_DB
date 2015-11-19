@@ -41,6 +41,7 @@
         <entry name="highs" type="string" size="10" desc="物品主图片编号"/>
         <entry name="weights" type="string" size="10" desc="物品主图片编号"/>
         <entry name="flowstatus" type="string" size="10" desc="物品流转状态"/>
+        <entry name="isshaibao" type="string" size="10" desc="是否晒宝广场"/>
         <entry name="timerecord" type="datetime" size="60" desc="记录时间, 格式 YYYY-MM-DD HH:MM:SS"/>
     </struct>
     
